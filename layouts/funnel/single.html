@@ -1,0 +1,2 @@
+{{- /* Standalone funnel pages: output funnels/<page>.html exactly as written, with no site chrome. */ -}}
+{{- readFile (printf "funnels/%s.html" .File.ContentBaseName) | safeHTML -}}
