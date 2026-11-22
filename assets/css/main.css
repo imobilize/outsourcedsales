@@ -5,22 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-font-family: ui-sans-serif,
-system-ui,
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-Apple Color Emoji,
-Segoe UI Emoji,
-NotoColorEmoji,
-Segoe UI Symbol,
-Android Emoji,
-EmojiSymbols;
+@layer base {
+	[x-cloak] { display: none !important; }
+	html { -webkit-text-size-adjust: 100%; }
+	body { @apply bg-white font-sans text-ink-800 antialiased; }
+	img, video { max-width: 100%; }
+	h1, h2, h3, h4 { @apply font-semibold tracking-tight; }
+}
 /* Custom CSS */
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
