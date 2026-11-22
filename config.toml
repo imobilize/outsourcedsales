@@ -1,7 +1,7 @@
 baseURL = "https://outsourcedsales.com/"
 title = "Outsourced Sales"
 
-locale = "en-us"
+languageCode = "en-us"
 DefaultContentLanguage = "en"
 
 relativeURLs = true
